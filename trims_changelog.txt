@@ -1,0 +1,116 @@
+v0.1.1			23/03/2024			Just a simple block of code and trying if spaCy and python works.
+v0.1.2			23/03/2024			Started an idea about how should T.R.I.M.S work.
+v0.1.3			23/03/2024			T.R.I.M.S found all files in the same directory as the code and it should have written them out (there were 0 files).
+v0.1.4			23/03/2024			T.R.I.M.S tried finding all files in C:\\ and wrote out all filenames.
+v0.1.5			23/03/2024			Since T.R.I.M.S wrote out all the files it found (nearly 400000), I saw just how many of these files even exist in this computer.
+v0.1.6			23/03/2024			First stable version. T.R.I.M.S didn't write out all files and just showed the amount of these files.
+
+v0.2			23/03/2024			Improving the file searching capabilities. 
+v0.2.1			23/03/2024			Reducing the number of files showing in T.R.I.M.S. Reducing by hidden files, directories (folders like "windows", "program files", "program files (x86)", "programdata") and system file types (removing "dll", "sys" and "exe" files) . Amount of files got from 400000 to nearly 76000 files.
+
+v0.3			24/03/2024			T.R.I.M.S asks user to write the directory to search from and gives user the amount of files it found. Then T.R.I.M.S asks if user wants it to write out all files in a separate text file.
+v0.3.1			24/03/2024			T.R.I.M.S found this time only 1200 files and it's a big improvement. Added .exe files to the search management (now it can show .exe files). Removed Appdata folder from search (it won't show it anymore).
+v0.3.2			24/03/2024			Reduced files a little by removing .ini files (system files). Keep in mind to empty recycle bin in a while.
+v0.3.3			24/03/2024			Tried to reduce by removing whole default folder, but it went wrong. (Unstable).
+v0.3.4			24/03/2024			Fixed some problems with v0.3.3. (Stable version and file amount reduced to 700).
+v0.3.5			24/03/2024			Removed Searches folder.
+
+v0.4			24/03/2024			Removed .igpi and .dat file types. Management is done and is next stable version.
+v0.4.1			24/03/2024			Tried to remove a specific file (ntuser.dat) from showing up, but it didn't work. 
+v0.4.2			24/03/2024			Tried to fix it again, but now it just quits the program after choosing directory. (Very unstable).
+v0.4.3			24/03/2024			It is now stable again, but it still won't exclude ntusar.dat.
+v0.4.4			24/03/2024			I finally fixed it. Now it doesn't include ntusar.dat file in the file list. (Stable again)
+v0.4.5			24/03/2024			Implementing send2trash library to ensure that files in the recycle bin won't show up in file list. T.R.I.M.S quits again when choosing directory.
+v0.4.6			24/03/2024			Since send2trash didn't work, I tried to implement ctypes and try do exclude the path manually. It still didn't work.
+v0.4.7			24/03/2024			I considered that I should try to exclude Recycle bin later because it has been so much pain in the ass. (Almost the same version as v0.4.4, just with some minor adjustments).
+v0.4.8			24/03/2024			Removed prompt to ask directory. Implemented default_directory (C:\\).
+
+v0.5			25/03/2024			Implementing a new file management update. Not fully working yet.
+v0.5.1			25/03/2024			T.R.I.M.S sorted files by file type in output file, but in command it showed wrong status.
+v0.5.2			25/03/2024			Fixed T.R.I.M.S showing wrong status, but needs some graphic adjustments.
+v0.5.3			25/03/2024			Fixed T.R.I.M.S creating automatically output file. (Now user can choose the name for output file).
+v0.5.4			25/03/2024			Some little bugfixes of text showing twice etc.
+v0.5.5			25/03/2024			Cleaning procedures. Objective keep windows, appdata and programdata as only folders that aren't allowed and sort more through file types. (Files found: 70000)
+
+v0.6			26/03/2024			Update v0.6. These folders are disabled: (windows, programdata, appdata, program files, program files (x86)) and these file types: (.dll, .sys, .ini, .igpi, .tmp, .cat, .cur, .ino, .xml, .lnk, .cpp, .h, .dat, .ani, .inf, .dat). (Discontinued!)
+v0.6.1			26/03/2024			Code cleaning and debugging.
+
+v0.7			26/03/2024			Integrating NLP with spaCy. First tests.
+v0.7.1			26/03/2024			Implementing a prompt where T.R.I.M.S asks user if he wants to make an output file or not.
+v0.7.2			26/03/2024			Quick bugfixes and code organization.
+v0.7.3			26/03/2024			Fixed not showing welcome message.
+v0.7.4			26/03/2024			Cannot install en-core-web-trf. Uninstalled en-core-web-sm. Gives errors.
+
+v0.8			27/03/2024			Installed en_core_web_trf and now it recognizes a sentence about searching for files.
+v0.8.1			29/03/2024			Implemented built-in timeit module to measure time of execution.
+v0.8.2			29/03/2024			Integrated a command to exit the program. 
+v0.8.3			29/03/2024			Simple bugfixes and code organizing. Fixed T.R.I.M.S to load in too slow (13 seconds) (new loading time: 6 seconds).
+
+v0.9			29/03/2024			Fixed T.R.I.M.S exiting after being told to not make an output file.
+
+
+----------------------------------
+
+
+v1.0 (Alpha)		08/04/2024			Fixed a lot of bugs. 
+								Fix #1 and #2: Order of execution. Fix #3: No unexpected exiting. Fix #4: OC Protocol. 
+
+v1.1			09/04/2024			Implemented weather forecast from openweathermaps.com. 
+v1.1.1			09/04/2024			Fixed T.R.I.M.S not recognizing different commands.
+v1.1.2			09/04/2024			Added more weather information.
+v1.1.3			09/04/2024			Increased looks of the prompt and fixed some weather information not showing.
+v1.1.4			10/04/2024			Fixed temperature units. (Was showing in Kelvin not Celsius).
+
+v1.2			11/04/2024			Implementing Google Calendar to T.R.I.M.S.
+v1.2.1			17/04/2024			Creating credentials and users. Adding NLP prompt for google calendar.
+v1.2.2			24/04/2024			Making the authorization work.
+v1.2.3			25/04/2024			Google Calendar finally working now. Writes out next ten events.
+v1.2.4			25/04/2024			T.R.I.M.S can create new events to google calendar.
+v1.2.5			25/04/2024			Now impossible to do both added things at the same time. Added new prompts.
+v1.2.6			27/04/2024			Integrated inputs for defining event details.
+
+v1.3			27/04/2024			Implementing new NLP possibilties like using plural forms.
+v1.3.1			28/04/2024			New more simple way to give details for creating events.
+v1.3.2			28/04/2024			It can't exit anymore after receiving no information about creating an event.			
+v1.3.3			Unknown	Release			Integrating NLTK. Running first tests. Failure. Will leave it for later.
+
+v1.4			18/05/2024 			Giving T.R.I.M.S permissions to update python packages straight from the program.
+v1.4.1			21/05/2024			Increasing safety and permissions to update only necessary packages.
+
+v1.5			09/06/2024			Hosting a server (using Flask) to access T.R.I.M.S from another devices.
+-------------------
+Server Version v0.1 	10/06/2024			Moved server hosting into a separate file.
+Server Version v0.2  	10/06/2024			Fixed Error 2: "No such file or directory".
+Server Version v0.3  	10/06/2024			Added logging features to ensure stability.
+Server Verison v0.4  	10/06/2024			Renamed some functions.
+Server Version v0.5 	10/06/2024			Deleted unnecessary lines of code. Trying to fix loading too long.
+-------------------
+v1.5.1			10/06/2024			Implemented time module. It reads how much time the loading took.
+v1.5.2			11/06/2024			Organizing Code. (OC Protocol - OCP).
+v1.5.3			11/06/2024			Added input to display the weather of any city.
+v1.5.4			11/06/2024			Implemented Speech Recognition. (Will be tested later.)
+v1.5.4 Test		Canceled			
+
+
+----------------------------------
+
+
+v1.6			13/06/2024			Important! Changed the whole File Management Algorithm. It will include only one folder: Users. (May be updated later!)
+v1.6.1			13/06/2024			Fixed execution time counter and made CLI look better.
+v1.6.2 - v1.6.6		Unknown				Data Loss. A simple mistake and the whole information was gone. I was able to restore most of it from a separate HDD.
+-------------------
+Server Version v1.0	18/08/2024			Discontinued the Python Server Project (PSP), and started a new Node.js Server Project (jsSP).
+Server Version v1.1	18/08/2024			Listening index.html at 127.0.0.1:3000
+-------------------
+v1.6.7			19/08/2024			OC Protocol. Diverted calendarapi and weatherapi into separate python files.
+v1.6.8			24/08/2024			Diverted file management system into separate python file (fmsystem.py). Internet connection test built in when starting the program.
+v1.6.9			24/08/2024			Added a help command for new users.
+v1.6.10			27/08/2024			Improved the help command. Runs from separate json file. Removed NLP completely for a limited time. Old input based prompts.
+(v1.5.4) Test		29/08/2024			Complete Testing. test spchrec02 has failed.
+v1.6.11			04/01/2025			spaCy database usage and simple ai algorithm. (After almost 5 months)
+
+
+----------------------------------
+
+
+v1.7			Not Released Yet		Complete NLP rework. Starting from the bottom again. (Update coming soon.)
